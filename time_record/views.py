@@ -53,4 +53,5 @@ class ExitEnterView(APIView):
                     atten_time += v
         total_time = round(atten_time, 3)
 
-        return Response({"month": user_month, "total_workes_time": total_time}, status=status.HTTP_202_ACCEPTED)
+        return Response({"month": user_month, "total_workes_time": total_time}, 
+                        status=status.HTTP_202_ACCEPTED)
